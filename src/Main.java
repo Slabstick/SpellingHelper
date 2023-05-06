@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -6,9 +7,14 @@ public class Main {
 //    List<String> filteredList = Words.readWords("offWords.txt");
 //    Words.writeWords(filteredList);
 
+    long startTime = System.currentTimeMillis();
     List<String> possibleWords = SpellingBeeHelper.sbHelper('G', "ELOVTA");
+    long endTime = System.currentTimeMillis();
     String listString = String.join("\n ", possibleWords);
     System.out.println(listString);
+    System.out.println("List created in " + (endTime - startTime) + "ms.");
+
+
   }
 
 }
