@@ -15,7 +15,7 @@ public class SpellingBeeHelper {
     List<String> filteredList = new ArrayList<>();
 
     for (String word : wordList) {
-      if (isValidWord(word, middleLetter, outerLetters)) {
+      if (isValidWord(word, Character.toUpperCase(middleLetter), outerLetters.toUpperCase())) {
         filteredList.add(word);
       }
     }

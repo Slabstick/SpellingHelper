@@ -8,7 +8,7 @@ public class Main {
 //    Words.writeWords(filteredList);
 
     long startTime = System.currentTimeMillis();
-    List<String> possibleWords = SpellingBeeHelper.sbHelper('G', "ELOVTA");
+    List<String> possibleWords = SpellingBeeHelper.sbHelper('i', "rtlaom");
     long endTime = System.currentTimeMillis();
     String listString = String.join("\n ", possibleWords);
     System.out.println(listString);
